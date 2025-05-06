@@ -28,8 +28,28 @@ public class Room {
     public boolean isDirty() {
         return dirty;
     }
-    public boolean isAvailable(){
+
+    public boolean isAvailable() {
         return !occupied && !dirty;
+    }
+
+    public void checkIn() {
+        if (!isAvailable()) {
+            System.out.println("This room is now occupied");
+            return;
+        }
+        occupied = true;
+        dirty = true;
+    }
+    public void checkOut(){
+        if (!occupied){
+            System.out.println("This room is now available");
+            return;
+        }
+        occupied = false;
+    }
+    public void cleanRoom(){
+        dirty = false;
     }
 }
 
