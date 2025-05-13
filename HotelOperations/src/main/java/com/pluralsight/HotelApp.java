@@ -16,5 +16,6 @@ public class HotelApp {
 //        System.out.println("Hours worked: %.2f, Total Pay: $%.2f, " + employee.getRegularHours() + employee.getTotalPay());
         System.out.printf("Hours worked: %.2f, Total Pay: $%.2f%n", employee.getRegularHours(), employee.getTotalPay());
 
+
     }
 }
